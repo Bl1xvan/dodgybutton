@@ -1,1 +1,47 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+#container {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+
+#grid-item {
+  display: inline-block;
+  position: relative;
+}
+
+#goes-behind {
+  display: -ms-grid;
+  display: grid;
+  z-index: -1;
+}
+
+#goes-behind * {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: -1;
+}
+
+#click-me {
+  font-size: 2rem;
+  font-variant: small-caps;
+  background-color: #e3ffc4;
+  color: #ff9dd1;
+  border: none;
+  width: 90%;
+  margin: auto;
+}
+
+#click-me:hover {
+  background-color: #90e034;
+}
+/*# sourceMappingURL=styles.css.map */

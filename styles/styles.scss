@@ -1,0 +1,40 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+#container{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+#grid-item{
+    display: inline-block;
+    position: relative;
+}
+
+#goes-behind {
+    display: grid;
+    z-index: -1;
+}
+
+#goes-behind *{
+    justify-content: center;
+    z-index: -1;
+}
+
+#click-me{
+    font-size: 2rem;
+    font-variant: small-caps;
+    background-color:rgb(227, 255, 196);
+    color:rgb(255, 157, 209);
+    border: none;
+    width: 90%;
+    margin: auto;
+    &:hover{
+        background-color: rgb(144, 224, 52);
+    }
+}
