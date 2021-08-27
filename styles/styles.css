@@ -11,17 +11,28 @@ body {
   width: 100vw;
   height: 100vh;
   position: absolute;
+  overflow: hidden;
 }
 
 #grid-item {
   display: inline-block;
+  background-color: red;
   position: relative;
+  left: 50%;
+  top: 25%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
 }
 
 #goes-behind {
   display: -ms-grid;
   display: grid;
   z-index: -1;
+}
+
+#goes-behind img {
+  width: 25vw;
+  height: auto;
 }
 
 #goes-behind * {
@@ -43,5 +54,14 @@ body {
 
 #click-me:hover {
   background-color: #90e034;
+}
+
+@media screen and (max-width: 700px) {
+  #goes-behind img {
+    width: 35vw;
+  }
+  #click-me {
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

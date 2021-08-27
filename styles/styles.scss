@@ -10,15 +10,25 @@ body{
     width: 100vw;
     height: 100vh;
     position: absolute;
+    overflow: hidden;
 }
 #grid-item{
     display: inline-block;
+    background-color: red;
     position: relative;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%);
 }
 
 #goes-behind {
     display: grid;
     z-index: -1;
+
+    img{
+        width: 25vw;
+        height: auto;
+    }
 }
 
 #goes-behind *{
@@ -36,5 +46,17 @@ body{
     margin: auto;
     &:hover{
         background-color: rgb(144, 224, 52);
+    }
+}
+
+@media screen and (max-width: 700px){
+    #goes-behind{
+        img{
+            width: 35vw;
+        }
+    }
+
+    #click-me{
+        font-size: 1rem;
     }
 }
