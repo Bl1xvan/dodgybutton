@@ -10,18 +10,16 @@ body {
 #container {
   width: 100vw;
   height: 100vh;
-  position: absolute;
   overflow: hidden;
 }
 
 #grid-item {
-  display: inline-block;
+  display: inline;
   background-color: red;
-  position: relative;
+  position: absolute;
   left: 50%;
-  top: 25%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 #goes-behind {
