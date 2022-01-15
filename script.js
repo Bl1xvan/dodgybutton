@@ -6,6 +6,12 @@ const face = document.getElementById("face");
 
 const OFFSET = 150;
 
+clickMe.addEventListener("click", function(e){
+    e.target.innerText = "No cheatng";
+    alert("Closing window now");
+    window.close();
+})
+
 document.addEventListener("mousemove", (e) => {
     const x = e.pageX;
     const y = e.pageY;
