@@ -4,7 +4,7 @@ const windowBox = document.body;
 const clickMe = document.getElementById("click-me");
 const face = document.getElementById("face");
 
-const OFFSET = 90;
+const OFFSET = 150;
 
 document.addEventListener("mousemove", (e) => {
     const x = e.pageX;
